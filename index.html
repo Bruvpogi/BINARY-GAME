@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Enter Username" required>
+            <input type="password" id="password" placeholder="Enter 4-digit Password" required maxlength="4">
+            <button id="login-btn">Login</button>
+        </div>
+    </div>
+
+    <!-- Game Interface -->
+    <div id="game-interface" class="hidden">
+        <div id="user-info">
+            <span id="user-name"></span> | <span id="user-points">Points: 0</span>
+        </div>
+        <div id="game-area">
+            <h3>Convert the Number</h3>
+            <div id="challenge"></div>
+            <input type="text" id="answer" placeholder="Your Answer">
+            <button id="submit-answer">Submit</button>
+        </div>
+        <button id="challenge-mode">Speed Challenge</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 CHAPTER-5. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
